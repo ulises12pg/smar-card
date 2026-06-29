@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMAR - Soldadura & Maquinados Rodriguez | Tarjeta Digital</title>
+    <meta name="description"
+        content="Tarjeta digital empresarial de SMAR - Soldadura & Maquinados Rodriguez. Contacto, ubicación, portafolio de proyectos y más.">
+    <meta name="theme-color" content="#1a1a1a">
+    <meta property="og:title" content="SMAR - Soldadura & Maquinados Rodriguez">
+    <meta property="og:description"
+        content="Donde la precisión del diseño se une con la fuerza del acero. Servicios de soldadura y maquinados industriales.">
+    <meta property="og:type" content="website">
+
+    <!-- Fuentes de Google -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Iconos Phosphor -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- QRCode.js para generación de QR -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Partículas de fondo animadas -->
+    <div class="bg-particles" id="particles"></div>
+
+    <div class="card-container">
+        <div class="card" id="mainCard">
+
+            <!-- ═══════════════════════════════════════════ -->
+            <!-- CABECERA CON LOGO                          -->
+            <!-- ═══════════════════════════════════════════ -->
+            <div class="header-bg">
+                <div class="header-content">
+                    <div class="logo-container">
+                        <img src="images/logo.png" alt="SMAR Logo" class="logo-img" id="logoImg">
+                    </div>
+
+                    <h1 class="company-name">SMAR</h1>
+                    <h2 class="company-subtitle">Soldadura & Maquinados Rodriguez</h2>
+
+                    <div class="header-badge">
+                        <i class="ph-fill ph-shield-check"></i>
+                        <span>Empresa Verificada</span>
+                    </div>
+                </div>
+
+                <!-- Decoración de líneas en la cabecera -->
+                <div class="header-lines">
+                    <div class="h-line"></div>
+                    <div class="h-line"></div>
+                    <div class="h-line"></div>
+                </div>
+            </div>
+
+            <!-- ═══════════════════════════════════════════ -->
+            <!-- FRASE / SLOGAN                             -->
+            <!-- ═══════════════════════════════════════════ -->
+            <div class="card-body">
+                <div class="tagline">
+                    <div class="tagline-line"></div>
+                    <p>"Donde la precisión del diseño<br>se une con la fuerza del acero"</p>
+                    <div class="tagline-line"></div>
+                </div>
+
+                <!-- ═══════════════════════════════════════════ -->
+                <!-- SECCIÓN DE TELÉFONOS                       -->
+                <!-- ═══════════════════════════════════════════ -->
+                <div class="section">
+                    <div class="section-header">
+                        <i class="ph-fill ph-phone-call section-icon"></i>
+                        <h3 class="section-title">Teléfonos</h3>
+                    </div>
+
+                    <div class="contact-list">
+                        <a href="tel:9989363962" class="contact-item" id="phone1">
+                            <div class="contact-info">
+                                <i class="ph ph-device-mobile contact-item-icon"></i>
+                                <span class="contact-text">998 936 3962</span>
+                            </div>
+                            <div class="contact-actions">
+                                <button onclick="copyToClipboard('9989363962', event)" class="btn-icon btn-copy"
+                                    title="Copiar número">
+                                    <i class="ph ph-copy"></i>
+                                </button>
+                                <a href="https://wa.me/529989363962" target="_blank" rel="noopener"
+                                    class="btn-icon btn-whatsapp" title="WhatsApp" onclick="event.stopPropagation()">
+                                    <i class="ph-fill ph-whatsapp-logo"></i>
+                                </a>
+                                <span class="btn-icon btn-call" title="Llamar">
+                                    <i class="ph-fill ph-phone"></i>
+                                </span>
+                            </div>
+                        </a>
+
+                        <a href="tel:3328300782" class="contact-item" id="phone2">
+                            <div class="contact-info">
+                                <i class="ph ph-device-mobile contact-item-icon"></i>
+                                <span class="contact-text">332 830 0782</span>
+                            </div>
+                            <div class="contact-actions">
+                                <button onclick="copyToClipboard('3328300782', event)" class="btn-icon btn-copy"
+                                    title="Copiar número">
+                                    <i class="ph ph-copy"></i>
+                                </button>
+                                <a href="https://wa.me/523328300782" target="_blank" rel="noopener"
+                                    class="btn-icon btn-whatsapp" title="WhatsApp" onclick="event.stopPropagation()">
+                                    <i class="ph-fill ph-whatsapp-logo"></i>
+                                </a>
+                                <span class="btn-icon btn-call" title="Llamar">
+                                    <i class="ph-fill ph-phone"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ═══════════════════════════════════════════ -->
+                <!-- SECCIÓN DE CORREOS                         -->
+                <!-- ═══════════════════════════════════════════ -->
+                <div class="section">
+                    <div class="section-header">
+                        <i class="ph-fill ph-envelope-simple section-icon"></i>
+                        <h3 class="section-title">Correos Electrónicos</h3>
+                    </div>
+
+                    <div class="contact-list">
+                        <a href="mailto:rodriguezalex82602@gmail.com" class="contact-item" id="email1">
+                            <div class="contact-info">
+                                <i class="ph ph-envelope contact-item-icon"></i>
+                                <span class="contact-text truncate">rodriguezalex82602@gmail.com</span>
+                            </div>
+                            <div class="contact-actions">
+                                <button onclick="copyToClipboard('rodriguezalex82602@gmail.com', event)"
+                                    class="btn-icon btn-copy" title="Copiar correo">
+                                    <i class="ph ph-copy"></i>
+                                </button>
+                                <span class="btn-icon btn-email" title="Enviar correo">
+                                    <i class="ph-fill ph-paper-plane-right"></i>
+                                </span>
+                            </div>
+                        </a>
+
+                        <a href="mailto:m_alejandror@hotmail.com" class="contact-item" id="email2">
+                            <div class="contact-info">
+                                <i class="ph ph-envelope contact-item-icon"></i>
+                                <span class="contact-text truncate">m_alejandror@hotmail.com</span>
+                            </div>
+                            <div class="contact-actions">
+                                <button onclick="copyToClipboard('m_alejandror@hotmail.com', event)"
+                                    class="btn-icon btn-copy" title="Copiar correo">
+                                    <i class="ph ph-copy"></i>
+                                </button>
+                                <span class="btn-icon btn-email" title="Enviar correo">
+                                    <i class="ph-fill ph-paper-plane-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ═══════════════════════════════════════════ -->
+                <!-- GALERÍA DE PROYECTOS                       -->
+                <!-- ═══════════════════════════════════════════ -->
+                <div class="section">
+                    <div class="section-header">
+                        <i class="ph-fill ph-images section-icon"></i>
+                        <h3 class="section-title">Nuestros Proyectos</h3>
+                    </div>
+
+                    <div class="gallery-grid" id="galleryGrid">
+                        <div class="gallery-item" onclick="openLightbox(0)">
+                            <img src="images/project1.jpeg" alt="Soldadura estructural" loading="lazy">
+                            <div class="gallery-overlay">
+                                <i class="ph-fill ph-magnifying-glass-plus"></i>
+                                <span>Soldadura Estructural</span>
+                            </div>
+                        </div>
+                        <div class="gallery-item" onclick="openLightbox(1)">
+                            <img src="images/project2.jpeg" alt="Maquinado CNC" loading="lazy">
+                            <div class="gallery-overlay">
+                                <i class="ph-fill ph-magnifying-glass-plus"></i>
+                                <span>Maquinado CNC</span>
+                            </div>
+                        </div>
+                        <div class="gallery-item" onclick="openLightbox(2)">
+                            <img src="images/project3.png" alt="Fabricación a medida" loading="lazy">
+                            <div class="gallery-overlay">
+                                <i class="ph-fill ph-magnifying-glass-plus"></i>
+                                <span>Fabricación a Medida</span>
+                            </div>
+                        </div>
+                        <div class="gallery-item" onclick="openLightbox(3)">
+                            <img src="images/project4.png" alt="Herrería industrial" loading="lazy">
+                            <div class="gallery-overlay">
+                                <i class="ph-fill ph-magnifying-glass-plus"></i>
+                                <span>Herrería Industrial</span>
+                            </div>
+                        </div>
+                        <div class="gallery-item gallery-item-wide" onclick="openLightbox(4)">
+                            <img src="images/project5.png" alt="Piezas de precisión" loading="lazy">
+                            <div class="gallery-overlay">
+                                <i class="ph-fill ph-magnifying-glass-plus"></i>
+                                <span>Piezas de Precisión</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ═══════════════════════════════════════════ -->
+                <!-- CÓDIGO QR                                  -->
+                <!-- ═══════════════════════════════════════════ -->
+                <div class="section">
+                    <div class="section-header">
+                        <i class="ph-fill ph-qr-code section-icon"></i>
+                        <h3 class="section-title">Comparte esta Tarjeta</h3>
+                    </div>
+
+                    <div class="qr-section">
+                        <div class="qr-card">
+                            <div class="qr-code-wrapper" id="qrCodeContainer"></div>
+                            <p class="qr-text">Escanea el código QR para compartir esta tarjeta digital</p>
+                            <div class="qr-actions">
+                                <button onclick="downloadQR()" class="btn-qr-action" id="btnDownloadQR">
+                                    <i class="ph-fill ph-download-simple"></i>
+                                    <span>Descargar QR</span>
+                                </button>
+                                <button onclick="shareCard()" class="btn-qr-action btn-qr-share" id="btnShareCard">
+                                    <i class="ph-fill ph-share-network"></i>
+                                    <span>Compartir</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ═══════════════════════════════════════════ -->
+            <!-- BOTONES DE ACCIÓN                          -->
+            <!-- ═══════════════════════════════════════════ -->
+            <div class="action-bar">
+                <a href="https://maps.app.goo.gl/PQqc8iuZpzUvxrz9A" target="_blank" rel="noopener noreferrer"
+                    class="action-button btn-location" id="btnLocation">
+                    <i class="ph-fill ph-map-pin action-icon"></i>
+                    <span>Ubicación</span>
+                </a>
+
+                <button onclick="downloadVCard()" class="action-button btn-save-contact" id="btnSaveContact"
+                    title="Guardar Contacto">
+                    <i class="ph-fill ph-address-book action-icon"></i>
+                    <span>Guardar</span>
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Crédito sutil al pie -->
+        <p class="footer-credit">
+            <i class="ph ph-code"></i> Tarjeta Digital por <strong>SMAR</strong>
+        </p>
+    </div>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- LIGHTBOX (Modal de Galería)                -->
+    <!-- ═══════════════════════════════════════════ -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-backdrop" onclick="closeLightbox()"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()" id="btnCloseLightbox">
+                <i class="ph-bold ph-x"></i>
+            </button>
+            <button class="lightbox-nav lightbox-prev" onclick="navigateLightbox(-1)" id="btnPrevLightbox">
+                <i class="ph-bold ph-caret-left"></i>
+            </button>
+            <div class="lightbox-image-container">
+                <img src="" alt="Proyecto" class="lightbox-img" id="lightboxImg">
+                <div class="lightbox-caption" id="lightboxCaption"></div>
+            </div>
+            <button class="lightbox-nav lightbox-next" onclick="navigateLightbox(1)" id="btnNextLightbox">
+                <i class="ph-bold ph-caret-right"></i>
+            </button>
+            <div class="lightbox-counter" id="lightboxCounter"></div>
+        </div>
+    </div>
+
+    <!-- Toast de notificación -->
+    <div id="toast">
+        <i class="ph-fill ph-check-circle toast-icon"></i>
+        <span id="toast-message" class="toast-text">Copiado al portapapeles</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

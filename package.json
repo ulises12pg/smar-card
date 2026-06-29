@@ -1,0 +1,10 @@
+{
+  "name": "smar-tarjeta-digital",
+  "version": "1.0.0",
+  "description": "Tarjeta digital empresarial de SMAR - Soldadura & Maquinados Rodriguez",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve ."
+  }
+}
