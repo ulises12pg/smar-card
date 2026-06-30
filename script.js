@@ -236,6 +236,8 @@ TEL;TYPE=CELL:+523328300782
 EMAIL;TYPE=WORK:rodriguezalex82602@gmail.com
 EMAIL;TYPE=WORK:m_alejandror@hotmail.com
 URL:${window.location.href}
+X-SOCIALPROFILE;TYPE=facebook:https://www.facebook.com/share/1BYs3tFG1R/
+X-SOCIALPROFILE;TYPE=tiktok:https://www.tiktok.com/@edgar24hrs?_r=1&_t=ZS-97F3dMNvd5O
 NOTE:Soldadura y Maquinados Industriales - Donde la precisión del diseño se une con la fuerza del acero
 END:VCARD`;
 

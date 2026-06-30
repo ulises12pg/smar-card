@@ -420,6 +420,78 @@ body {
     background: var(--smar-dark-2);
 }
 
+/* ── Social Media ───────────────────────────────── */
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+}
+
+.social-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: var(--smar-white);
+    padding: 0.85rem 1rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(0,0,0,0.04);
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: all var(--transition-bounce);
+    cursor: pointer;
+}
+
+.social-card .social-icon {
+    font-size: 1.35rem;
+    transition: transform var(--transition-bounce);
+}
+
+.social-facebook {
+    border-left: 3px solid #1877F2;
+}
+
+.social-facebook:hover {
+    background: #1877F2;
+    color: white;
+    border-color: #1877F2;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(24, 119, 242, 0.3);
+}
+
+.social-facebook .social-icon {
+    color: #1877F2;
+}
+
+.social-facebook:hover .social-icon {
+    color: white;
+    transform: scale(1.1) rotate(5deg);
+}
+
+.social-tiktok {
+    border-left: 3px solid #000000;
+}
+
+.social-tiktok:hover {
+    background: #010101;
+    color: white;
+    border-color: #010101;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), -3px 0 0 #00f2fe, 3px 0 0 #fe0979;
+}
+
+.social-tiktok .social-icon {
+    color: #010101;
+}
+
+.social-tiktok:hover .social-icon {
+    color: white;
+    transform: scale(1.1) rotate(-5deg);
+}
+
 /* ── Gallery ────────────────────────────────────── */
 .gallery-grid {
     display: grid;
@@ -927,6 +999,7 @@ body {
 .section:nth-child(4) { animation-delay: 0.3s; }
 .section:nth-child(5) { animation-delay: 0.4s; }
 .section:nth-child(6) { animation-delay: 0.5s; }
+.section:nth-child(7) { animation-delay: 0.6s; }
 
 @keyframes sectionFadeIn {
     from { opacity: 0; transform: translateY(12px); }
