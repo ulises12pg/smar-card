@@ -364,12 +364,19 @@ body {
     justify-content: center;
     width: 30px;
     height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+    max-width: 30px;
+    max-height: 30px;
     border: none;
     border-radius: var(--radius-sm);
     font-size: 0.85rem;
     cursor: pointer;
     transition: all var(--transition-fast);
     text-decoration: none;
+    padding: 0;
+    line-height: 1;
+    box-sizing: border-box;
 }
 
 .btn-icon:active {
@@ -488,6 +495,57 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     text-align: center;
+}
+
+/* ── Map Section ────────────────────────────────── */
+.map-container {
+    position: relative;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    border: 1px solid rgba(0,0,0,0.06);
+}
+
+.map-container iframe {
+    display: block;
+    width: 100%;
+    height: 220px;
+    border: none;
+    filter: saturate(0.85) contrast(1.05);
+    transition: filter var(--transition-base);
+}
+
+.map-container:hover iframe {
+    filter: saturate(1) contrast(1);
+}
+
+.map-overlay-link {
+    position: absolute;
+    bottom: 0.6rem;
+    right: 0.6rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.4rem 0.75rem;
+    background: var(--smar-dark);
+    color: white;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: var(--radius-full);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    transition: all var(--transition-base);
+    z-index: 2;
+}
+
+.map-overlay-link:hover {
+    background: var(--smar-red);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(204, 30, 44, 0.3);
+}
+
+.map-overlay-link i {
+    font-size: 0.8rem;
 }
 
 /* ── QR Code Section ────────────────────────────── */
@@ -868,6 +926,7 @@ body {
 .section:nth-child(3) { animation-delay: 0.2s; }
 .section:nth-child(4) { animation-delay: 0.3s; }
 .section:nth-child(5) { animation-delay: 0.4s; }
+.section:nth-child(6) { animation-delay: 0.5s; }
 
 @keyframes sectionFadeIn {
     from { opacity: 0; transform: translateY(12px); }

@@ -81,7 +81,7 @@
                     </div>
 
                     <div class="contact-list">
-                        <a href="tel:9989363962" class="contact-item" id="phone1">
+                        <div class="contact-item" id="phone1" onclick="window.location.href='tel:9989363962'" style="cursor: pointer;">
                             <div class="contact-info">
                                 <i class="ph ph-device-mobile contact-item-icon"></i>
                                 <span class="contact-text">998 936 3962</span>
@@ -95,13 +95,13 @@
                                     class="btn-icon btn-whatsapp" title="WhatsApp" onclick="event.stopPropagation()">
                                     <i class="ph-fill ph-whatsapp-logo"></i>
                                 </a>
-                                <span class="btn-icon btn-call" title="Llamar">
+                                <a href="tel:9989363962" class="btn-icon btn-call" title="Llamar" onclick="event.stopPropagation()">
                                     <i class="ph-fill ph-phone"></i>
-                                </span>
+                                </a>
                             </div>
-                        </a>
+                        </div>
 
-                        <a href="tel:3328300782" class="contact-item" id="phone2">
+                        <div class="contact-item" id="phone2" onclick="window.location.href='tel:3328300782'" style="cursor: pointer;">
                             <div class="contact-info">
                                 <i class="ph ph-device-mobile contact-item-icon"></i>
                                 <span class="contact-text">332 830 0782</span>
@@ -115,11 +115,11 @@
                                     class="btn-icon btn-whatsapp" title="WhatsApp" onclick="event.stopPropagation()">
                                     <i class="ph-fill ph-whatsapp-logo"></i>
                                 </a>
-                                <span class="btn-icon btn-call" title="Llamar">
+                                <a href="tel:3328300782" class="btn-icon btn-call" title="Llamar" onclick="event.stopPropagation()">
                                     <i class="ph-fill ph-phone"></i>
-                                </span>
+                                </a>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
 
@@ -239,6 +239,24 @@
                                 </button>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <!-- ═══════════════════════════════════════════ -->
+                <!-- MAPA DE UBICACIÓN                          -->
+                <!-- ═══════════════════════════════════════════ -->
+                <div class="section">
+                    <div class="section-header">
+                        <i class="ph-fill ph-map-pin section-icon"></i>
+                        <h3 class="section-title">Nuestra Ubicación</h3>
+                    </div>
+
+                    <div class="map-container" id="mapContainer">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3749.9434698805276!2d-99.24809402477183!3d19.968879481428363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDU4JzA4LjAiTiA5OcKwMTQnNDMuOSJX!5e0!3m2!1ses!2smx!4v1782781850119!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                        <a href="https://maps.app.goo.gl/PQqc8iuZpzUvxrz9A" target="_blank" rel="noopener noreferrer" class="map-overlay-link" id="mapOverlayLink">
+                            <i class="ph-fill ph-navigation-arrow"></i>
+                            <span>Abrir en Google Maps</span>
+                        </a>
                     </div>
                 </div>
             </div>
